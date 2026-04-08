@@ -676,7 +676,6 @@ SELECT faculty.faculty_name, [hours].course, [hours].all_h FROM stud
 	GROUP BY faculty.faculty_name, [hours].course, [hours].all_h
 GO
 
-
 CREATE VIEW dbo.GoodStudsInfo
 AS
 SELECT faculty.faculty_name, [hours].course, form.form_name, COUNT(stud.id) AS quantity FROM stud
@@ -699,6 +698,8 @@ SELECT stud.last_name, stud.exm FROM stud
 	GROUP BY stud.last_name, stud.exm
 GO
 
+--2
+--Все представления только читают, т.к. они не вносят изменения в БД.
 
 --Задания по UNION
 --1
