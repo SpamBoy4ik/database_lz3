@@ -491,7 +491,7 @@ SELECT sel.last_name, sel.course FROM (
 							WHERE stud.last_name = 'Зингель' OR stud.last_name = 'Зайцева'
 						)
 
---7 не понял факультет курс и форма это общее или отдельно?
+--7 не понял факультет курс и форма это общее или отдельно? НЕ ПЕРЕЖИВАЙ ОТДЕЛЬНО ОТ REXA
 SELECT stud.last_name, stud.s_name, form.form_name, [hours].course, faculty.faculty_name FROM [hours]
 	JOIN process ON process.hours_id = [hours].id
 	JOIN stud ON stud.id = process.stud_id
